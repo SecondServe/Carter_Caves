@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.secondservestudios.carter_caves">
+   <!-- The following 2 lines are permissions for gps usage on the user's device-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location.gps" />
+
 
     <application
         android:allowBackup="true"
@@ -17,5 +22,7 @@
             </intent-filter>
         </activity>
     </application>
+
+
 
 </manifest>
